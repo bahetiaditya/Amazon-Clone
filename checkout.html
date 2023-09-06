@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Your Store</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo flex">
+          <img src="images/logo.png" alt="amazon_logo" />
+        </div>
+        <h1>Checkout</h1>
+      </header>
+      <main>
+        <div class="checkout-container">
+          <section class="order-summary">
+            <h2>Order Summary</h2>
+            <ul class="cart-items">
+              <li class="cart-item">
+                <div class="product">
+                  <img src="images/pinter1.jpg" alt="Product 1" />
+                  <div class="product-details">
+                    <h2>Product 1</h2>
+                    <p>Price: ₹1,15,000</p>
+                  </div>
+                  <div class="quantity">
+                    <input type="number" value="1" />
+                  </div>
+                </div>
+              </li>
+              <li class="cart-item">
+                <div class="product">
+                  <img src="images/pinter7.jpg" alt="Product 2" />
+                  <div class="product-details">
+                    <h2>Product 2</h2>
+                    <p>Price: ₹73,000</p>
+                  </div>
+                  <div class="quantity">
+                    <input type="number" value="1" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="shipping-payment">
+            <div class="shipping">
+              <h2>Shipping Address</h2>
+              <h5>Harsh Beniwal</h5>
+              <h5>House No. 1, Street No. 2, Vazirabad, Nanded - 431606</h5>
+            </div>
+            <div class="payment">
+              <section class="payment-method">
+                <h2>Payment Method</h2>
+                <div class="payment-options">
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="credit-card"
+                      name="payment-method"
+                      value="credit-card"
+                    />
+                    <label for="credit-card">Credit Card</label>
+                  </div>
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="paypal"
+                      name="payment-method"
+                      value="paypal"
+                    />
+                    <label for="paypal">PayPal</label>
+                  </div>
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="bank-transfer"
+                      name="payment-method"
+                      value="bank-transfer"
+                    />
+                    <label for="bank-transfer">Bank Transfer</label>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="checkout-button-container">
+          <button class="checkout-button">Place Order</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
